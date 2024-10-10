@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Personal Portfolio</title>
+  <title>Ashley's Portfolio</title>
 
   <!--
     - favicon
@@ -178,8 +178,30 @@
       - #main-content
     -->
 
-    <div class="main-content">
+<div class="main-content">
 
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+        </ul>
+      </nav>
+      
       <!--
         - #ABOUT
       -->
@@ -216,7 +238,6 @@
           <ul class="service-list">
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
                 " alt="design icon" width="40">
@@ -229,11 +250,9 @@
                   The most modern and high-quality design.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
@@ -245,11 +264,9 @@
                   High-quality development of sites.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
@@ -261,10 +278,35 @@
                   Professional development of applications for Android.
                 </p>
               </div>
-
             </li>
 
-            
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Business Analysis and Modelling</h4>
+
+                <p class="service-item-text">
+                  Design focused on key elements like data charts, flow diagrams, and a sleek, modern style that conveys professionalism
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Development and  Administration</h4>
+
+                <p class="service-item-text">
+                  Designing the structure of databases, defining tables, keys, and relationships.
+                </p>
+              </div>
+            </li>
 
           </ul>
 
@@ -278,7 +320,6 @@
         - #RESUME
       -->
       <article class="resume active" data-page="resume">
-
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
@@ -300,13 +341,52 @@
               <h4 class="h4 timeline-item-title">Tshwane University of Technology</h4>
     
               <span>2019 — 2024</span>
-    
+              <span>National Diploma in IT Software Development</span>
             </li>
-    
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kweledi Secondary school</h4>
+
+              <span>2017</span>
+
+              <p class="timeline-text">
+                 I completed my matric in 2017
+              </p>
+
+            </li>
           </ol>
     
         </section>
-    
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Development Intern</h4>
+               <br>
+              <p class="timeline-text">
+
+                Company Name: 4IR TUT Soshanguve South Campus
+              </p>
+              <br>
+              <span>Started: February 2024</span>
+              <br>
+            </li>
+          </ol>
+
+        </section>
         
     
         <section class="skill">
@@ -318,7 +398,7 @@
             <li class="skills-item">
     
               <div class="title-wrapper">
-                <h5 class="h5">Programming: C++, Python, javaScript, Figma, HTML, CSS, Tailwindcss.</h5>
+                <h5 class="h5">Programming: C++, Python, Django, C#, React, javaScript, Figma, HTML, CSS, Tailwindcss.</h5>
               </div>
     
               <div class="skill-progress-bg">
@@ -399,94 +479,179 @@
       <!--
         - #PORTFOLIO
       -->
-      <article class="portfolio active" data-page="portfolio">
+      <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
-    
+
         <section class="projects">
-    
+
           <ul class="filter-list">
-    
+
             <li class="filter-item">
-              <div class="col-span-1">
-                <div class="bg-white overflow-hidden shadow-lg rounded-lg">
-                    <img src="./assets/images/Ecommerce.png" alt="Screenshot (10).png" class="w-full h-24 object-contain">
-                    <div class="p-2">
-                        <h3 class="text-lg font-bold text-gray-800 mb-1">Project Title</h3>
-                        <p class="text-gray-700">Online Food Ordering</p>
-                        <a href="https://github.com/ashleypule/Full-Developed-Online-Food-Ordering" class="inline-block mt-6 px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-200">View</a>
-                    </div>
-                </div>
-            </div>
+              <button class="active" data-filter-btn>All</button>
             </li>
-    
+
             <li class="filter-item">
-              <div class="col-span-1">
-                <div class="bg-white overflow-hidden shadow-lg rounded-lg">
-                    <img src="./assets/images/Sales predic.png" alt="dataset-card.png" class="w-full h-24 object-contain">
-                    <div class="p-2">
-                        <h3 class="text-lg font-bold text-gray-800 mb-1">Project Title</h3>
-                        <p class="text-gray-700">Big Mart Sale Prediction</p>
-                        <a href="https://github.com/ashleypule/Sales-prediction" class="inline-block mt-6 px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-200">View</a>
-                    </div>
-                </div>
-            </div>
+              <button data-filter-btn>AI Project</button>
             </li>
-    
+
             <li class="filter-item">
-              <div class="col-span-1">
-                <div class="bg-white overflow-hidden shadow-lg rounded-lg">
-                    <img src="./assets/images/Gender class.png" alt="maxresdefault.jpg" class="w-full h-24 object-contain">
-                    <div class="p-2">
-                        <h3 class="text-lg font-bold text-gray-800 mb-1">Project Title</h3>
-                        <p class="text-gray-700">Gender Classification</p>
-                        <a href="https://github.com/ashleypule/Gender-classification1" class="inline-block mt-6 px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-200">View</a>
-                    </div>
-                </div>
-            </div>
+              <button data-filter-btn>Web development</button>
             </li>
-    
+
           </ul>
-    
+
           <div class="filter-select-box">
-    
+
             <button class="filter-select" data-select>
-    
+
               <div class="select-value" data-selecct-value>Select category</div>
-    
+
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-    
+
             </button>
-    
+
             <ul class="select-list">
-    
+
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-    
+
+              
+
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Generative AI Projects</button>
               </li>
-    
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-    
+
               <li class="select-item">
                 <button data-select-item>Web development</button>
               </li>
-    
+
             </ul>
-    
+
           </div>
-    
-    
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ashleypule/DentalClinic-webg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/dental.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dental clinic</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ashleypule/Ecommerce-Online-Food-Ordering">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/homepage.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ecommerce Food ordering</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="generative ai project">
+              <a href="https://oraldiseasesdiagnosis.streamlit.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img  src="./assets/images/oral.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Oral Diseases Diagnosis and Chatbot</h3>
+
+                <p class="project-category">AI Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="generative ai project">
+              <a href="https://africanlanguagestranslator.streamlit.app//">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/translate.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">African Lanuages Translator</h3>
+
+                <p class="project-category">AI Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="generative ai project">
+              <a href="https://audio-analyzer.streamlit.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/audio.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Audio Analyzer</h3>
+
+                <p class="project-category">AI Project</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="generative ai project">
+              <a href="https://image-analyzer-and-chat.streamlit.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/image.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Photo Analyzer</h3>
+
+                <p class="project-category">AI Project</p>
+
+              </a>
+            </li>
+
+            
+          </ul>
+
         </section>
-    
+
       </article>
 
       <br>
@@ -500,8 +665,6 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-    
-       
     
         <section class="contact-form">
     
@@ -529,13 +692,9 @@
       </article>
   
 
-    </div>
+  </div>
 
   </main>
-
-
-
-
 
 
   <!--
